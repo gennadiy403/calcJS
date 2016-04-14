@@ -46,7 +46,7 @@ function calculate(arr, expr) {
     } else {
       if (multiply == true) {
         arr2[arr2.length-1] *= elem;
-        isNaN(+elem) ? error = true : arr2.push(+elem);
+        if ( isNaN(+elem) ) { error = true }
         multiply = false;
       } else {
         if (elem !== '+') {
