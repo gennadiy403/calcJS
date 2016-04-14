@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="title">Введите выражение для вычисления (только сложение и умножение)</div>
+  <input id="expression" type="text" />
+  <input id="eval" type="button"  value="=" class="" onclick="splitting()" />
+  <input id="result" type="text" value="Результат" class="" disabled />
+  <input id="show-history" type="button" value="Показать историю" onclick="toggleHistory()">
+  <input id="clear-history" type="button" value="Очистить историю" onclick="clearHistory()">
+  <textarea id="history" cols="50" rows="10" disabled hidden>
+      
+  </textarea>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+  <script src="https://databoom.space/databoom.js"></script>
+  <script src="./calc.js"></script>
+</body>
+</html>
